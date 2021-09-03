@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 
 
 def get_cookie():
-    username = ''
-    password = ''
+    username = '5120205915'
+    password = '956671548Asd'
 
     session = requests.session()
     headers = {
@@ -52,8 +52,9 @@ def get_cookie():
         "password": password,
         "captcha": yzm
     }
-    h = session.post(url=login,headers=headers,data=m)
+    h = session.post(url=login,headers=headers,data=m,verify=False)
     # print(session.cookies.get_dict())
+    print(h.text)
     return session.cookies.get_dict()
 
 if __name__ == '__main__':
