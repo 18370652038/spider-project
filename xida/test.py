@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 
 
 def get_cookie():
-    username = '5120205915'
-    password = '956671548Asd'
+    username = ''
+    password = ''
 
     session = requests.session()
     headers = {
